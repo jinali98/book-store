@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import mysql from "mysql2";
 
@@ -5,8 +6,8 @@ const app = express();
 
 const db = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "277jinali",
+  user: process.env.USER,
+  password: process.env.DB_PASSWORD,
   database: "book-store",
 });
 
