@@ -15,10 +15,3 @@
 .book {
   flex: 1;
 }
-
-img {
-  height: 300px;
-  width: 200px;
-  object-fit: cover;
-  background-color: gray;
-}
